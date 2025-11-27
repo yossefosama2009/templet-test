@@ -183,7 +183,6 @@ align-items: center;
 }
 
 
-/* Flex layout لتثبيت Footer تحت */
 html, body {
     height: 100%;
     margin: 0;
@@ -195,7 +194,7 @@ body {
 }
 
 .hero, .trending {
-    flex: 1; /* يسمح للـ content بالتوسع */
+    flex: 1; 
 }
 
 .footer{
@@ -257,4 +256,25 @@ body {
     border-top: 1px solid rgba(255,255,255,0.2);
     padding-top: 15px;
 }
+
+
+.container,
+.row,
+.col,
+.col-*, .col-sm-*, .col-md-*, .col-lg-*, .col-xl-* {
+    flex: none !important;
+    width: auto !important;
+    max-width: none !important;
+}
+
+html, body {
+    min-width: 1200px !important;
+    overflow-x: auto !important;
+}
+
+img {
+    width: auto !important;
+    height: auto !important;
+    }
+
 
