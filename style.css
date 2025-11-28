@@ -1,20 +1,23 @@
-body{
-    margin: 0;
-    font: 1em sans-serif;
-    text-transform: capitalize;
-    padding: 0;
+ @media (max-width: 768px) {
+
+     body {
+         margin: 0;
+         font: 1em sans-serif;
+         text-transform: capitalize;
+         padding: 0;
+     }
 }
 
 .header{
   background-color:  #0171f9;
   display: flex;
   align-items: center;
-  justify-content: space-between;  /* اللوجو شمال واللينكات يمين */
+  justify-content: space-between;  
   padding: 20px 40px;
 }
 
 .header img {
-  width: 120px; /* حجم اللوجو (اختياري) */
+  width: 120px; 
       
 
 }
@@ -183,6 +186,7 @@ align-items: center;
 }
 
 
+/* Flex layout لتثبيت Footer تحت */
 html, body {
     height: 100%;
     margin: 0;
@@ -194,7 +198,7 @@ body {
 }
 
 .hero, .trending {
-    flex: 1; 
+    flex: 1; /* يسمح للـ content بالتوسع */
 }
 
 .footer{
@@ -256,7 +260,3 @@ body {
     border-top: 1px solid rgba(255,255,255,0.2);
     padding-top: 15px;
 }
-
-
-
-
