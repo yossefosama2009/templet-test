@@ -1,77 +1,95 @@
- @media (max-width: 640px) {
-     body {
-         margin: 0;
-         font: 1em sans-serif;
-         text-transform: capitalize;
-         padding: 0;
-     }
+/* ---------------------- */
+/*      GLOBAL STYLES     */
+/* ---------------------- */
+
+* {
+    box-sizing: border-box;
 }
 
-.header{
-  background-color:  #0171f9;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;  
-  padding: 20px 40px;
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
-.header img {
-  width: 120px; 
-      
-
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
 }
 
-.nav-link a{
-    padding: 20px;
+a {
     text-decoration: none;
     color: white;
 }
-.nav-link{
+
+a:hover {
+    background: #2386fe;
+    border-radius: 19px;
+    padding: 6px;
+}
+
+/* ---------------------- */
+/*        HEADER          */
+/* ---------------------- */
+
+.header {
+    background-color: #0171f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.header img {
+    width: 120px;
+}
+
+.nav-link {
     padding: 20px;
 }
-.but{
+
+.nav-link a {
+    padding: 20px;
+}
+
+.but {
     border-radius: 10px;
     border: none;
     outline: none;
-color: white;
-background: #eb1624;
-padding: 5px;
-width: 60px;
-cursor: pointer;
-text-transform: capitalize;
+    color: white;
+    background: #eb1624;
+    padding: 5px;
+    width: 60px;
+    cursor: pointer;
+    text-transform: capitalize;
 }
 
-.but:hover{
-     background:   #ee626b;
+.but:hover {
+    background: #ee626b;
     border-radius: 20px;
     padding: 9px;
-    width: 80PX;
-    
-
+    width: 80px;
 }
 
+/* ---------------------- */
+/*         HERO           */
+/* ---------------------- */
 
 .hero {
     display: flex;
-    justify-content: space-between; /* النص على اليسار، الصورة على اليمين */
+    justify-content: space-between;
     align-items: center;
     background-color: #0171f9;
     padding: 40px;
     color: white;
     border-radius: 0 0 60px 60px;
-    gap: 20px; /* مسافة بين النص والصورة */
-    
+    gap: 20px;
 }
 
 .hero-text {
-    flex: 1; /* النص ياخد المساحة المتاحة */
+    flex: 1;
 }
 
-
-
-.hero-image img {
-    border-radius: 20px;
-}
 .hero-image {
     display: flex;
     justify-content: center;
@@ -79,12 +97,20 @@ text-transform: capitalize;
     text-align: end;
 }
 
+.hero-image img {
+    border-radius: 20px;
+}
 
+/* ---------------------- */
+/*         SEARCH         */
+/* ---------------------- */
 
+.form {
+    position: relative;
+    width: fit-content;
+}
 
-
-
-.inp{
+.inp {
     border-radius: 20px;
     border: none;
     outline: none;
@@ -92,9 +118,10 @@ text-transform: capitalize;
     height: 15px;
     width: 176px;
 }
-.ser{
+
+.ser {
     cursor: pointer;
-    border-radius: 20PX;
+    border-radius: 20px;
     border: none;
     outline: none;
     padding: 6px;
@@ -102,58 +129,44 @@ text-transform: capitalize;
     background: #eb1624;
     color: white;
     position: absolute;
-   right: -60px;
+    right: -60px;
 }
 
-
-.form{
-    position: relative;
-     position: relative;
-    width: fit-content;
-}
-
-
-a:hover{
-    background:  #2386fe;
-    border-radius: 19px;
-    padding: 6px;
-    
-
-}
-.liter{
-    width: 100%;
-}
+/* ---------------------- */
+/*       TRENDING         */
+/* ---------------------- */
 
 .trending {
     padding: 30px;
-    margin: 5px;  }
-span.sp{
+    margin: 5px;
+}
+
+span.sp {
     color: red;
     text-transform: uppercase;
     padding: 13px;
 }
 
-
-h1.m1{
+h1.m1 {
     margin: 2px;
     padding: 13px;
 }
-        
-.butt{
-      cursor: pointer;
-    border-radius: 20PX;
+
+.butt {
+    cursor: pointer;
+    border-radius: 20px;
     border: none;
     outline: none;
     padding: 6px;
     width: 80px;
     background: #eb1624;
     color: white;
-  }
+}
 
-.trending-header{
-display: flex;
-justify-content: space-between;
-align-items: center;
+.trending-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .trending-cards {
@@ -168,7 +181,7 @@ align-items: center;
 }
 
 .card.thumb {
-    border-radius:300px;
+    border-radius: 300px;
     width: 100%;
 }
 
@@ -184,75 +197,62 @@ align-items: center;
     cursor: pointer;
 }
 
+/* ---------------------- */
+/*         FOOTER         */
+/* ---------------------- */
 
-/* Flex layout لتثبيت Footer تحت */
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.hero, .trending {
-    flex: 1; /* يسمح للـ content بالتوسع */
-}
-
-.footer{
+.footer {
     background-color: #0b1d5f;
     color: white;
     padding: 40px 20px;
     font-size: 0.9em;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.footer-section{
+.footer-section {
     flex: 1;
     min-width: 200px;
 }
 
-.footer-section h3{
+.footer-section h3 {
     margin-bottom: 15px;
     font-size: 1.2em;
 }
 
-.footer-section ul{
+.footer-section ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-section ul li{
+.footer-section ul li {
     margin-bottom: 10px;
 }
 
-.footer-section ul li a{
+.footer-section ul li a {
     color: white;
-    text-decoration: none;
 }
 
-.footer-section ul li a:hover{
+.footer-section ul li a:hover {
     text-decoration: underline;
 }
 
-.footer-section .socials a{
+.footer-section .socials a {
     display: inline-block;
     margin-right: 10px;
 }
 
-.footer-section .socials img{
-       width: 61px;
+.footer-section .socials img {
+    width: 61px;
     height: 42px;
 }
 
-.footer-bottom{
+.footer-bottom {
     text-align: center;
     margin-top: 30px;
     font-size: 0.8em;
@@ -260,3 +260,109 @@ body {
     padding-top: 15px;
 }
 
+/* ----------------------------- */
+/*       RESPONSIVE SCREENS     */
+/* ----------------------------- */
+
+/* تابلت */
+@media (max-width: 640px) {
+
+    .header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+       flex-direction: row;   /* خليه نفس وضع الكمبيوتر */
+    text-align: left;
+    gap: 10px;
+    }
+
+    .hero-image img {
+         width: 50%
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .inp {
+        width: 70%;
+    }
+
+    .ser {
+        position: static;
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .trending-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+
+    .hero-text {
+    width: 50%;
+  }
+}
+
+    .card {
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* موبايل */
+@media (max-width: 576px) {
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    .inp {
+        width: 100%;
+    }
+
+    .ser {
+        width: 100%;
+        margin: 10px 0 0;
+    }
+
+    h1, p {
+        font-size: 1rem;
+    }
+
+    .trending {
+        padding: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .footer-section {
+        min-width: 100%;
+    }
+}
