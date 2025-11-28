@@ -1,5 +1,4 @@
- @media (max-width: 768px) {
-
+ @media (max-width: 640px) {
      body {
          margin: 0;
          font: 1em sans-serif;
@@ -260,3 +259,4 @@ body {
     border-top: 1px solid rgba(255,255,255,0.2);
     padding-top: 15px;
 }
+
